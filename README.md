@@ -57,9 +57,9 @@ These are **development tracks, demonstrations or scoped pilot directions**, not
 
 | Direction | Current public description |
 | :-- | :-- |
-| **Final Gate / governed AI actions** | Define authority, refusal conditions and evidence before one consequential executor call. Pilot direction. |
+| **Final Gate / governed AI actions** | Research into controlled authorization and accountable AI actions. |
 | **Prompt Preflight + Context Split** | Explore reducing outbound context before a cloud model. Static synthetic demo direction. |
-| **Governed remediation / PatchRouter** | Prepare a bounded change, attach test/policy evidence and require separate authority before merge or deployment. Technical-proof direction. |
+| **Governed remediation / PatchRouter** | Research into reviewable and governed AI-assisted code changes. |
 | **Local developer intelligence** | Repository discovery, mapping and evidence-oriented tools under development. No public Pro release yet. |
 
 **Pro is a separate planned product (€29/month)**. Its integrations, delivery, license activation and checkout are not yet released. Private control implementations, customer data and internal repositories are not published in this profile.
