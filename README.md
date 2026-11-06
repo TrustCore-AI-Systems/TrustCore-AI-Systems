@@ -1,89 +1,97 @@
 <div align="center">
 
-# 🛡️ TrustCore AI Systems Oy
+<img src="https://trustcore.fi/assets/shared/uusilogo.png" alt="TrustCore AI Systems Oy — official logo" width="340">
 
-### Control before consequence.
+# TrustCore AI Systems Oy
+
 **Models decide. Systems authorize.**
 
-**Finnish systems engineering for governed agentic AI, controlled execution and reviewable evidence.**
+### Control before consequence.
 
-[🌐 TrustCore website](https://trustcore.fi/) · [🚀 Public software](#public-software) · [🔬 Research & pilots](#research--pilots) · [🇫🇮 Suomeksi](#suomeksi) · [✉️ Contact](mailto:kari.hyotyla@trustcore.fi)
+**Independent authorization controls for consequential AI-agent actions.**
+
+[Website](https://trustcore.fi/) · [Founding Pilot — €2,500 + VAT](mailto:kari.hyotyla@trustcore.fi?subject=Final%20Gate%20Founding%20Pilot) · [Contact](mailto:kari.hyotyla@trustcore.fi)
 
 </div>
 
 ---
 
-## 🧭 What we build
+## The problem
 
-AI can recommend actions, generate patches and use tools. A model's output is **not** authorization to affect another system.
+AI agents can propose payments, updates, tool calls and other actions that affect real systems.
 
-TrustCore explores independent controls at two critical boundaries:
+**A model's decision is not permission to execute.** Logging an action after it happens is not the same as controlling it before it happens.
 
-| Trust boundary | Engineering focus | Question |
-| :-- | :-- | :-- |
-| **Before the model** | Prompt Preflight · Context Split · input boundary | What context may leave a trusted environment? |
-| **Before an external effect** | Final Gate · identity · scope · policy | Is this precise action authorized **at execution time**? |
-| **Across the process** | Evidence · refusals · receipts · observed outcomes | Can we distinguish a proposal, an authorization and an actual effect? |
+## What is Final Gate?
 
-**OBSERVE → DECIDE → ENFORCE → EXECUTE**
+**Final Gate** is TrustCore's control boundary between a proposed AI action and its execution. The aim is to check that the *specific action* is permitted **at the moment of effect**, and to retain evidence of the decision and observed outcome.
 
-A passing test is not deployment permission. A plausible patch is not authority to merge. An audit log alone is not proof that an unauthorized action was prevented.
+```text
+AI / AGENT PROPOSES AN ACTION
+              |
+              v
+    AUTHORITY + POLICY + SCOPE
+              |
+              v
+          FINAL GATE
+          /        \
+       ALLOW       DENY
+         |           |
+     EXECUTION    NO EXECUTION
+         \         /
+          EVIDENCE
+```
 
-### Engineering principles
+The control is intended to distinguish **proposal**, **authorization**, **attempt** and **actual effect**. A convincing model output, a success-shaped signal, or a prior approval must not silently become current execution authority.
 
-**Explicit authority.** A named owner and bounded permissions for consequential changes.
+## Founding Pilot — €2,500 + VAT
 
-**Refusal that matters.** Review, stop or deny before an external effect, not merely after logging one.
+**One workflow. One consequential action. One authorization boundary. One reviewable proof.**
 
-**Evidence with its scope attached.** Tell apart prototype behavior, technical proof, pilot claims and actual deployment.
+We work with a technical decision-maker to scope a single use case and evaluate whether an AI-proposed action can be allowed or refused **before** the consequential operation.
 
-## Public software
+**Pilot scope includes:**
 
-### [✦ Repo Galaxy — Free Limited](https://github.com/TrustCore-AI-Systems/repo-galaxy)
+- Define the proposed action, target, decision owner and permitted conditions.
+- Agree on **ALLOW / DENY** cases and what would count as convincing evidence.
+- Demonstrate the scoped control boundary in a controlled environment.
+- Review test outcomes, evidence and the remaining gaps together.
 
-**Released · v0.6.1-free.1 · no fee, no account**
+The founding pilot is a **bounded technical evaluation**, not a promise of a completed production integration, payment-provider certification or a universal AI security platform. Production integrations and any additional work require separate scoping.
 
-A local visual workspace for repository maps. Move and rename planets, choose colors and groups, draw declared relationships, rearrange seven resizable panels, and import/export JSON.
+**Interested in a technical evaluation?**  
+[Email TrustCore about the €2,500 Founding Pilot](mailto:kari.hyotyla@trustcore.fi?subject=Final%20Gate%20Founding%20Pilot)
 
-- **8 editable repositories per map.** Larger compatible maps open for viewing and JSON export.
-- **Offline single-file application.** No filesystem scan or cloud account.
-- **Independent download and documented terms.** Free Limited is not an open-source license for the full edition.
+## Evidence before claims
 
-[**Download the released app →**](https://github.com/TrustCore-AI-Systems/repo-galaxy/releases/tag/v0.6.1-free.1) · [Read documentation](https://github.com/TrustCore-AI-Systems/repo-galaxy#readme) · [☕ Voluntary coffee support](https://buymeacoffee.com/fastlanedev)
+TrustCore's local reference implementations and demonstrations use controlled test cases, mock effects and explicit authorization boundaries. A test result applies to **the stated test scope**; it is not evidence that a live payment network or an unrelated customer system has been integrated.
 
-## Research & pilots
+We distinguish between:
 
-These are **development tracks, demonstrations or scoped pilot directions**, not promises that production deployments already exist.
+- What an AI system **proposed**.
+- What a trusted authority **permitted or denied**.
+- What the executor **actually did**.
+- What the available evidence **can and cannot establish**.
 
-| Direction | Current public description |
-| :-- | :-- |
-| **Final Gate / governed AI actions** | Research into controlled authorization and accountable AI actions. |
-| **Prompt Preflight + Context Split** | Explore reducing outbound context before a cloud model. Static synthetic demo direction. |
-| **Governed remediation / PatchRouter** | Research into reviewable and governed AI-assisted code changes. |
-| **Local developer intelligence** | Repository discovery, mapping and evidence-oriented tools under development. No public Pro release yet. |
-
-**Pro is a separate planned product (€29/month)**. Its integrations, delivery, license activation and checkout are not yet released. Private control implementations, customer data and internal repositories are not published in this profile.
-
-## 🤝 Work with TrustCore
-
-We collaborate on **one clearly bounded workflow at a time**: identify what the AI proposes, who has authority, what must be refused, and what evidence would demonstrate the boundary works.
-
-TrustCore also offers **Commerce Launch**, a separately scoped Shopify storefront-building service. This is not an AI governance deployment.
-
-**Pilot scoping, technical collaboration and business enquiries:** [kari.hyotyla@trustcore.fi](mailto:kari.hyotyla@trustcore.fi)
-
-## Suomeksi
-
-**TrustCore AI Systems Oy kehittää tekoälyjärjestelmien hallintaa ennen vaikutusta.** Selvitämme, mitä tietoa AI-mallille saa siirtää, milloin AI:n ehdottama toiminto on oikeasti sallittu ja millä näytöllä lupa, esto ja toteutunut vaikutus erotetaan toisistaan.
-
-**Julkinen ohjelmamme:** [Repo Galaxy Free Limited](https://github.com/TrustCore-AI-Systems/repo-galaxy), paikallinen visuaalinen editori kahdeksalle muokattavalle repositoriolle. Hallinta- ja analyysiytimet pidetään erillään julkisesta jakelusta. Pilotit sovitaan ja todennetaan rajatussa laajuudessa.
+The engineering direction is deliberately narrow: **models may decide what to propose; systems must authorize what may act.**
 
 ---
 
-**Founder & AI Architect:** Kari “Gary” Hyötylä
+## Suomeksi
 
-**Company:** TrustCore AI Systems Oy · Finland · Business ID **3618251-2**
+**TrustCore AI Systems Oy kehittää kontrollia tekoälyagentin ehdotuksen ja todellisen vaikutuksen väliin.**
 
-**Contact:** [kari.hyotyla@trustcore.fi](mailto:kari.hyotyla@trustcore.fi) · [trustcore.fi](https://trustcore.fi/)
+Tekoäly voi ehdottaa maksua, järjestelmämuutosta tai työkalun käyttöä. Ehdotus ei kuitenkaan yksin ole lupa toteuttaa toimintoa.
 
-<sub>TrustCore is a founder-led engineering company. Public descriptions identify goals and scoped work; they do not imply completed customer deployments or disclose private implementation details.</sub>
+**Final Gate Founding Pilot — 2 500 € + ALV**
+
+Yksi rajattu työnkulku, yksi seurauksellinen toiminto, yksi valtuutusraja ja todennettava tekninen näyttö. Pilotti on kontrolloidun ympäristön tekninen arviointi, ei väite valmiista tuotantointegraatiosta.
+
+**Kysy pilotista:** [kari.hyotyla@trustcore.fi](mailto:kari.hyotyla@trustcore.fi?subject=Final%20Gate%20Founding%20Pilot)
+
+---
+
+**TrustCore AI Systems Oy** · Finland · Business ID **3618251-2**  
+[trustcore.fi](https://trustcore.fi/) · [kari.hyotyla@trustcore.fi](mailto:kari.hyotyla@trustcore.fi)
+
+<sub>Private implementation details and customer data are not published here. This profile describes the commercial pilot direction and its technical scope; it does not claim completed customer deployments.</sub>
